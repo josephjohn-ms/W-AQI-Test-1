@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <title>Weather & Pollution Prediction</title>
+  <link rel="icon" href="images/W AQI Tree Logo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    <h1 id="mainh1">Weather & Pollution Prediction</h1>
+    <img src="images/W AQI Tree Logo.png" alt="Logo" style="max-height: 100px; align-items: right; margin-right: 20px;">
+  </header>
+
+  <nav style="display: flex;">
+    <a href="contact.html">Contact</a>
+    <a href="index.html#">Home</a>
+    <a href="about.html#">About</a>
+  </nav>
+  <div id="toggle-buttons">
+    <div class="toggle-button-container">
+      <div class="toggle-buttons">
+        <button onclick="toggleWeather()" class="active">Weather</button>
+        <button onclick="toggleAQI()">AQI</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="location-info">
+    <div id="current-location">
+      <strong>Current Location:</strong> <span id="userLocation">Loading...</span>
+    </div>
+    <div id="place-name">
+      <strong>District:</strong> <span id="userDistrict">Unable to retrieve location</span>
+    </div>
+  </div>
+  
+
+  <div class="card">
+    <div class = "search">
+        <input type="text" placeholder="enter city name"
+        spellcheck="false">
+        <button><img src="images/search.png"></button>
+    </div>
+    <div class = "weather">
+        <img src = "images/rain.png" class="weather-icon">
+        <h1 class="temp">22°C</h1>
+        <h2 class="city"> New York</h2>
+        <div class="details">
+            <div class="col">
+                <img src="images/humidity.png">
+                <div>
+                    <p class ="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="col">
+                <img src="images/wind.png">
+                <div>
+                    <p class ="wind">15 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+  <!-- This div 
+    
+     <div>
+    <h1 id="celsius"> 32°C</h1>
+  </div>
+    is for cards-->
+  <!-- This div is for cards-->
+  <div id="dayCards">
+    <div class="day_cards">
+      <h1>SUN</h1>
+      <img src="images/Cloudy with Sun.png" alt="Sun Image">
+    </div>
+    <div class="day_cards">
+      <h1>MON</h1>
+      <img src="images/Sunny Rainy Day.png" alt="Sun Image">
+    </div>
+    <div class="day_cards">
+      <h1>TUE</h1>
+      <img src="images/thunderstorm.png" alt="Sun Image">
+    </div>
+    <div class="day_cards">
+      <h1>WED</h1>
+      <img src="images/Storm.png" alt="Sun Image">
+    </div>
+    <div class="day_cards">
+      <h1>THU</h1>
+      <img src="images/Cloudy.png" alt="Sun Image">
+    </div>
+    <div class="day_cards">
+      <h1>FRI</h1>
+      <img src="images/Cloudy with Sun.png" alt="Sun Image">
+    </div>
+    <div class="day_cards">
+      <h1>SAT</h1>
+      <img src="images/Sunny.png" alt="Sun Image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
